@@ -1,20 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
+    <link rel="stylesheet" href="css/styles.css">
     <title>Ryan's Personal Page</title>
+    <!-- !important makes sure that style does not get overwritten in css -->
     <body>
-      <h1>Who Am I?</h1>
-        <p>Hello, welcome to my personal page that is more of a resume page.</p>
-      <h1>Active projects</h1>
-        <h2>Class A Amplifier</h2>
+      <h1 style="font-size:70px; text-align:center;">Ryan Hua</h1>
+        <!-- style is used for a ton of things such as color, font, and above font size -->
+        <!-- <tagname style="property:value;"> -->
+        <p style="font-size:20px; text-align:center;">Computer Engineering Student at Virginia Tech</p>
+      <img src="images/vtlogo.png" alt="VT Logo" width="200" height="200">
+      <!-- src is the address of a file and alt is what is display if image is not shown -->
+      <hr>
+      <h2 title="Summary">Who Am I?</h2>
+      <!-- title is Information shown when the mouse hovers over it-->
+        <p>Hello, welcome to my personal page that is more of a resume page.
+          <br><!-- br starts a new paragraph without having to use another p -->
+          I am a sophomore at Virginia Tech pursing a Bachelors of Science in Computer
+          Engineering with a minor in Music Technology Emphasis.
+        </p>
+        <hr>
+      <h2 title="Projects">Active projects</h2>
+        <h4>Class A Amplifier</h4>
           <p>
             This project was a small introductory project done at the Virginia Tech
             Amp Lab. This was to introduce me to PCB design and the schmatics. The amp
             was created by Nelson Pass and this amplifier was a single stage and single
             ended amplifier.
           </p>
-      <h1>Contacts</h1>
+        <h4>Personal Website</h4>
+          <p>
+              Website is written using HTML, CSS, and JavaScript. The text editor used
+              for this website was ATOM.
+          </p>
+          <hr>
+          <!-- hr is a thematic break and pre keeps spaces and lines-->
+      <h2 title="Contact Information">Contacts</h2>
         <p>Linkedin:<a href="http://www.linkedin.com/in/ryandhua">ryandhua</a></p>
+        <!-- href is hyperlink in this case it is to my linkedin; I will get a pfp soon. -->
     </body>
   <head>
 </html>
