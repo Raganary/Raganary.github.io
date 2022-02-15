@@ -5,21 +5,23 @@
     <title>Ryan's Personal Page</title>
     <!-- !important makes sure that style does not get overwritten in css -->
     <body>
-      <h1 style="font-size:70px; text-align:center;">Ryan Hua</h1>
-        <!-- style is used for a ton of things such as color, font, and above font size -->
-        <!-- <tagname style="property:value;"> -->
-        <p style="font-size:20px; text-align:center;">Computer Engineering Student at Virginia Tech</p>
-      <img src="images/vtlogo.png" alt="VT Logo" width="200" height="200">
-      <!-- src is the address of a file and alt is what is display if image is not shown -->
-      <hr>
+      <div class="Name">
+          <h1 style="font-size:70px;">Ryan Hua</h1>
+          <!-- style is used for a ton of things such as color, font, and above font size -->
+          <!-- <tagname style="property:value;"> -->
+          <p style="font-size:20px;">Computer Engineering Student at Virginia Tech</p>
+      </div>
+        <img src="images/vtlogo.png" alt="VT Logo" style="width:200; height:200">
+        <!-- src is the address of a file and alt is what is display if image is not shown -->
+        <hr>
       <h2 title="Summary">Who Am I?</h2>
       <!-- title is Information shown when the mouse hovers over it-->
-        <p>Hello, welcome to my personal page that is more of a resume page.
-          <br><!-- br starts a new paragraph without having to use another p -->
-          I am a sophomore at Virginia Tech pursing a Bachelors of Science in Computer
-          Engineering with a minor in Music Technology Emphasis.
-        </p>
-        <hr>
+          <p>Hello, welcome to my personal page that is more of a resume page.
+            <br><!-- br starts a new paragraph without having to use another p -->
+            I am a sophomore at Virginia Tech pursing a Bachelors of Science in Computer
+            Engineering with a minor in Music Technology Emphasis.
+          </p>
+          <hr>
       <h2 title="Projects">Active projects</h2>
         <h4>Class A Amplifier</h4>
           <p>
@@ -35,9 +37,30 @@
           </p>
           <hr>
           <!-- hr is a thematic break and pre keeps spaces and lines-->
+      <div class="Courses">
+        <h2 title="Relevant ">Relevant Courses</h2>
+          <ul> <!--ul is unordered list and ol ordered list-->
+              <li>Fundamentals of Digital Systems</li>
+              <li>Circuits and Devices</li>
+              <li>Embedded Systems</li>
+              <li>Computational Engineering</li>
+              <li>Signal and Systems</li>
+              <li>Physical Electronics</li>
+          </ul>
+      </div>
       <h2 title="Contact Information">Contacts</h2>
-        <p>Linkedin:<a href="http://www.linkedin.com/in/ryandhua">ryandhua</a></p>
+        <p title="Linkedin">Linkedin:<a href="http://www.linkedin.com/in/ryandhua" target="_blank" title="http://www.linkedin.com/in/ryandhua">ryandhua</a></p>
+        <p>Email:<a href="mailto:ryanhua35@vt.edu" target="_blank">ryanhua35@vt.edu</a></p>
         <!-- href is hyperlink in this case it is to my linkedin; I will get a pfp soon. -->
+        <!--
+            _blank - Opens the document in a new window or tab
+            _parent - Opens the document in the parent frame
+            _top - Opens the document in the full body of the window
+            id is for creating bookmarks, then add a link from within same page to connect using href and #
+            to create a button in the style the function is display:inline-block
+            image mapping
+         -->
+
     </body>
   <head>
 </html>

@@ -29,3 +29,27 @@ p{
   color: #bebebe;
   font-family: sans-serif;
 }
+a:link{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+a:visited{
+  color: #BB86FC;
+  text-decoration: none;
+}
+a:active{
+  color: #3700B3;
+  text-decoration: underline;
+}
+a:hover{
+  color: #03DAC6;
+  text-decoration: underline;
+}
+.Courses{
+  line-height 1.5;
+  color: #bebebe;
+  font-family: sans-serif;
+}
+.Name{
+  text-align: center;
+}
