@@ -53,3 +53,10 @@ a:hover{
 .Name{
   text-align: center;
 }
+table{
+  table-layout: fixed;
+  width: 100%;
+}
+td{
+  width: 10%;
+}
