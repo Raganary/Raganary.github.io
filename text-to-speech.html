@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>Ryan Hua's Portfolio</title>
+    <link rel="icon" href="images/icon.png">
+    <navbar>
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+           <button class="dropbtn">Projects</button>
+           <div class="dropdown-content">
+             <a href="text-to-speech.html">Text-to-Speech</a>
+             <a href="#">Link 2</a>
+             <a href="#">Link 3</a>
+           </div>
+        </div>
+        <a href="Resume.pdf">Resume</a>
+        <a href="#about">About</a>
+      </div>
+    </navbar>
+    <body>
+      <input type="text" name="text">
+      <a href="#" class="say"> Go </a>
+
+      <audio src="" class="speech" hidden></audio>
+
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script>
+        $(function() {
+          $('a.say').on('click', function(e){
+            e.preventDefault();
+            var text= $('input[name="text"]').val();
+            text = encodeURIComponent(text);
+            console.log(text);
+
+            $('audio').attr('src',url).get(0).play();
+          });
+        });
+      </script>
+    </body>
+  <h2 title="Contact Information" align="center">Contacts</h2>
+    <p title="Linkedin" align="center">Linkedin:<a href="http://www.linkedin.com/in/ryandhua" target="_blank" title="http://www.linkedin.com/in/ryandhua">ryandhua</a></p>
+    <p align="center">Email:<a href="mailto:ryanhua35@vt.edu" target="_blank">ryanhua35@vt.edu</a></p>
+
+    </body>
+  <head>
+</html>
