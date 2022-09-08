@@ -13,8 +13,8 @@
            <button class="dropbtn">Projects</button>
            <div class="dropdown-content">
              <a href="text-to-speech.html">Text-to-Speech</a>
-             <a href="#">Link 2</a>
-             <a href="#">Link 3</a>
+             <a href="photos.html">Photo Gallery</a>
+             <a href="typingTest.html">Typing Test</a>
            </div>
         </div>
         <a href="Resume.pdf">Resume</a>
@@ -35,7 +35,7 @@
             var text= $('input[name="text"]').val();
             text = encodeURIComponent(text);
             console.log(text);
-
+            var url="https://translate.google.com/translate_tts?ie=UTF-8&q=" + text + "&tl=en";
             $('audio').attr('src',url).get(0).play();
           });
         });

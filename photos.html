@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/photo.css">
+    <title>Ryan Hua's Portfolio</title>
+    <link rel="icon" href="images/icon.png">
+    <navbar>
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+           <button class="dropbtn">Projects</button>
+           <div class="dropdown-content">
+             <a href="text-to-speech.html">Text-to-Speech</a>
+             <a href="photos.html">Photo Gallery</a>
+             <a href="typingTest.html">Typing Test</a>
+           </div>
+        </div>
+        <a href="Resume.pdf">Resume</a>
+        <a href="#about">About</a>
+      </div>
+    </navbar>
+  <head>
+    <script type="text/javascript">
+      function imgUpload(){
+
+        var image = document.getElementById("upload").files[0];
+
+        var reader = new FileReader();
+
+        reader.onload = function(e){
+          document.getElementById("display-image").src = e.target.result;
+        }
+
+        reader.readAsDataURL(image);
+      }
+    </script>
+  </head>
+  <body>
+    <!--https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/-->
+    <div class="photoEntry">
+      <label for="entry">Choose a photo entry:</label>
+      <input type="file" id="upload" name="entry" accept="image/jpeg, image/png" onChange="imgUpload()" />
+    </div>
+      <img id="display-image" src="" />
+
+    <div class="row">
+      <div class="column">
+          <img src="">
+      </div>
+    </div>
+
+  </body>
+    <h2 title="Contact Information" align="center">Contacts</h2>
+      <p title="Linkedin" align="center">Linkedin:<a href="http://www.linkedin.com/in/ryandhua" target="_blank" title="http://www.linkedin.com/in/ryandhua">ryandhua</a></p>
+      <p align="center">Email:<a href="mailto:ryanhua35@vt.edu" target="_blank">ryanhua35@vt.edu</a></p>
+
+</html>
