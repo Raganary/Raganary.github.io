@@ -1,0 +1,291 @@
+<!-- video guide followed by  Daily Tuition-->
+<!-- link https://www.youtube.com/watch?v=PK_mQwVJxkQ -->
+<!-- ctrl + / for comment -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/navbar-top.css">
+    <title>Ryan Hua's Portfolio</title>
+    <link rel="icon" href="assets/icon.png">
+    <title>Ryan Hua's Portfolio</title>
+
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="css/blog.css">
+  </head>
+  <navbar-top>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <div class="dropdown">
+         <button class="dropbtn">Projects</button>
+         <div class="dropdown-content">
+           <a href="text-to-speech.html">Text-to-Speech</a>
+           <a href="photos.html">Photo Gallery</a>
+           <a href="typingTest.html">Typing Test</a>
+         </div>
+      </div>
+      <a href="acousticsPage.html">Room Acoustics</a>
+      <a href="Resume.pdf">Resume</a>
+      <a href="#about">About</a>
+    </div>
+  </navbar-top>
+  <body>
+    <!-- Header -->
+      <header id="header" class="shadow bg-light">
+        <nav class="container navbar">
+          <a href="/index.html" class="nav-brand text-dark">
+            Room Acoustics Blog
+          </a>
+
+          <!-- toggle button -->
+          <button class="toggle-button">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+
+          <!-- collaspe on toggle button click -->
+          <div class="collapse">
+            <ul class="navbar-nav">
+              <a href="acousticsPage.html" class="nav-link">Home</a>
+              <a href="#" class="nav-link">Blog</a>
+              <a href="#" class="nav-link">Pages</a>
+              <a href="#" class="nav-link">Categories</a>
+              <a href="#" class="nav-link">Contact</a>
+            </ul>
+          </div>
+
+          <!-- collaspe on toggle button click -->
+          <div class="collapse">
+            <ul class="navbar-nav">
+              <div class="search-box">
+                <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+                <a href="#" class="nav-link"><i class="fa-solid fa-headphones"></i></a>
+                <a href="#" class="nav-link"><i class="fa-solid fa-file-audio"></i></a>
+                <a href="#" class="nav-link"><i class="fa-solid fa-volume-high"></i></i></a>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    <!-- .Header -->
+
+    <!-- Main Site -->
+      <main id="site-main">
+        <!-- Post Content -->
+          <section class="container">
+            <article id="post">
+              <!-- article heading -->
+              <div class="headings text-center">
+                <div class="category">
+                  <a href="#" class="nav-link">Anatomy of Ear</a>
+                </div>
+
+                <div class="title">
+                  <h2 class="text-title text-dark display-1">Thats crazy</h2>
+                </div>
+
+                <div class="meta">
+                  <a href="#" class="link dislay-2 text secondary px-1">
+                    <i class="fas fa-user text-primary"></i> Ryan Hua
+                  </a>
+                  <a href="#" class="link dislay-2 text secondary px-1">
+                    <i class="fas fa-clock text-primary"></i> Clock Thurs 9, 2022
+                  </a>
+                </div>
+              </div>
+              <!-- thumbnail -->
+              <div class="thumbnail mt-3">
+                <img src="./assets/ear-anatomy-1.jpg" class="thumbnail" alt="">
+              </div>
+              <!-- content -->
+              <div class="content text-dark display-2 secondary-title">
+                <p>
+                  The ear is the organ that enables hearing and, in mammals, body balance using the vestibular system.
+                  In mammals, the ear is usually described as having three parts—the outer ear, the middle ear and the inner ear.
+                  The outer ear consists of the pinna and the ear canal.
+                </p>
+              </div>
+            </article>
+            <!-- post related -->
+            <div class="post-realted py-2">
+                <div class="row justify-content-center">
+                    <div class="prev">
+                        <div class="py-2">
+                            <a href="#" class="display-2 text-dark">
+                                <i class="fas fa-chevron-left"></i>
+                                Previous Post
+                            </a>
+                        </div>
+                        <article class="article text-center">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <img src="./assets/freqSpec.png" class="object-fit" alt="">
+                                </a>
+                                <div class="cart-body px-1">
+                                    <div class="category">
+                                        <a href="#" class="link text-primary text-secondary">Music</a>
+                                    </div>
+                                    <a href="#" class="text-title display-1 text-dark">
+                                        Frequency Range Spectrum
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="next text-right">
+                        <div class="py-2">
+                            <a href="#" class="display-2 text-dark">
+                                Next Post
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <article class="article text-center">
+                            <div class="d-flex">
+                                <div class="cart-body px-1">
+                                    <div class="category">
+                                        <a href="#" class="link text-primary text-secondary">Music</a>
+                                    </div>
+                                    <a href="#" class="text-title display-1 text-dark">
+                                        Study of Sound Waveforms
+                                    </a>
+                                </div>
+                                <a href="#">
+                                    <img src="./assets/waveform-1.png" class="object-fit" alt="">
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+          </section>
+        <!-- .Post Content -->
+      </main>
+    <!-- !Main Site -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-3">
+            <h2 class="footer-title secondary-title">About Me</h2>
+              <div class="secondary-title text-secondary">
+                 <p class="mt-2 ">
+                     Computer Engineering Student with Music Tech minor
+                 </p>
+
+                 <address>
+                     <i class="fas fa-map-marker-alt text-primary"></i>
+                     Blacksburg,VA
+                 </address>
+
+                 <div class="phone">
+                     <i class="fas fa-mobile text-primary"></i>
+                     N/A
+                 </div>
+
+                 <div class="email">
+                     <i class="fas fa-envelope text-primary"></i>
+                     ryanhua35@vt.edu
+                 </div>
+              </div>
+          </div>
+          <div class="col-3">
+            <h2 class="footer-title secondary-title">Featured Posts</h2>
+
+            <div class="feature-post">
+              <div class="flex-item">
+                <article class="article">
+                  <div class="d-flex">
+                    <a href="#">
+                      <img src="./assets/ear-anatomy-1.jpg" class="object-fit px-3" alt="">
+                      <div class="px-3">
+                        <a href="#" class="text-title display-2 text-dark">
+                          Anatomy of Ear
+                        </a>
+                        <p class="secondary-title text-secondary display-3">
+                          <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="flex-item">
+                <article class="article">
+                  <div class="d-flex">
+                    <a href="#">
+                      <img src="./assets/freqSpec.png" class="object-fit px-3" alt="">
+                      <div class="px-3">
+                        <a href="#" class="text-title display-2 text-dark">
+                          Frequency Range Spectrum
+                        </a>
+                        <p class="secondary-title text-secondary display-3">
+                          <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="flex-item">
+                <article class="article">
+                  <div class="d-flex">
+                    <a href="#">
+                      <img src="./assets/waveform-1.png" class="object-fit px-3" alt="">
+                      <div class="px-3">
+                        <a href="#" class="text-title display-2 text-dark">
+                          Study of Sound Waveforms
+                        </a>
+                        <p class="secondary-title text-secondary display-3">
+                          <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <h2 class="footer-title secondary-title">Courses Taken</h2>
+              <div class="tags">
+                  <div class="d-flex flex-wrap">
+                      <a href="#" class="nav-link btn bg-light">Embedded Systems</a>
+                      <a href="#" class="nav-link btn bg-light">Computational Engineering</a>
+                      <a href="#" class="nav-link btn bg-light">Signal and Systems</a>
+                      <a href="#" class="nav-link btn bg-light">Music Theory</a>
+                      <a href="#" class="nav-link btn bg-light">Audio Technology</a>
+                  </div>
+              </div>
+
+              <h2 class="footer-title secondary-title mt-2">More Info</h2>
+
+              <div class="tags info">
+                  <div class="d-flex flex-wrap">
+                      <a href="Resume.pdf" class="nav-link btn bg-light"><i class="fa-regular fa-file"></i></a>
+                      <a href=" www.linkedin.com/in/ryandhua" class="nav-link btn bg-light"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="https://open.spotify.com/user/12146942528?si=c9fe62926d704903" class="nav-link btn bg-light"><i class="fa-brands fa-spotify"></i></a>
+                      <a href="https://steamcommunity.com/id/Raganary/" class="nav-link btn bg-light"><i class="fa-brands fa-steam-symbol"></i></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- copyrights  -->
+        <div class="copyrights">
+            <p class="text-center text-secondary display-2">
+                 © 2021 <a href="#" class="text-primary">Copyrights</a> - All rights reserved.
+            </p>
+        </div>
+      </div>
+    </footer>
+    <!-- !footer -->
+    <!-- masonry library for horizontal grid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- custom javascript main.js file -->
+    <script src="blog.js"></script>
+  </body>
+</html>
