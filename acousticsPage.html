@@ -5,7 +5,6 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
     <link rel="stylesheet" href="css/navbar-top.css">
     <title>Ryan Hua's Portfolio</title>
     <link rel="icon" href="assets/icon.png">
@@ -53,7 +52,7 @@
               <a href="#" class="nav-link">Blog</a>
               <a href="#" class="nav-link">Pages</a>
               <a href="#" class="nav-link">Categories</a>
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </ul>
           </div>
 
@@ -69,9 +68,30 @@
             </ul>
           </div>
         </nav>
-      </header>
-    <!-- .Header -->
 
+        <div class="overlay" id="contact">
+          <div class="wrapper">
+            <a href="#" class="close">&times;</a>
+            <div class="content">
+              <div class="container-contact secondary-title text-dark">
+                <form>
+                  <label>Email</label>
+                  <input type="text" placeholder="Your Email">
+                  <label>First Name</label>
+                  <input type="text" placeholder="Your First Name">
+                  <label>Last Name</label>
+                  <input type="text" placeholder="Your Last Name">
+                  <label>Subject</label>
+                  <textarea placeholder="Your Query Here..."></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <!-- .Header -->
     <!-- Main Site -->
       <main id="site-main">
         <!-- Blog Post Section -->
@@ -177,9 +197,6 @@
            </section>
           </div>
         </section>
-
-
-
         <!-- .Blog Post Section -->
       </main>
     <!-- !Main Site -->
@@ -208,6 +225,11 @@
                    <div class="email">
                        <i class="fas fa-envelope text-primary"></i>
                        ryanhua35@vt.edu
+                   </div>
+
+                   <div class="gitName">
+                       <i class="fa-brands fa-github"></i>
+                     <a href="https://github.com/Raganary" class="text-primary">Github</a>
                    </div>
                 </div>
             </div>
