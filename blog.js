@@ -10,7 +10,7 @@ toggle.addEventListener('click', function(){
 
 // with masonry, horizontalgrid
 new Masonry("#posts .grid", {
-  itemSelector : '.grid-item',
+  itemSelectorAll: '.grid-item',
   gutter : 20 //horizontal spacing
 });
 

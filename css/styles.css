@@ -53,14 +53,6 @@ a:hover{
   color: #03DAC6;
   text-decoration: underline;
 }
-
-div.courses{
-  line-height 1.5;
-  color: #bebebe;
-  font-family: sans-serif;
-  text-align: center;
-}
-
 ul.myUL{
   text-align: left;
   display: inline-block;
@@ -89,6 +81,14 @@ td{
 .text-center{
   text-align: center;
 }
+
+.indent{
+  text-indent: 30px;
+}
+
+.text-light{
+color: #bebebe;
+}
 /*----- Main Content----- */
 .pageHeader{
   background-image: url(https://4kwallpapers.com/images/wallpapers/ios-13-stock-ipados-blue-black-background-amoled-ipad-hd-2880x1800-795.jpg);
@@ -99,7 +99,8 @@ td{
   margin-bottom: -10px;
 }
 
-.summary{
-  background-color: ;
-  box-sizing: border-box;
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: auto;
 }
