@@ -1,8 +1,11 @@
 .weather-widget{
     text-align: center;
     border: 2px solid #bebebe;
+    background-color: rgb(82, 82, 82);
     width: 50%;
     margin: 20px auto;
+    box-shadow: 0 0 20px rgba(147, 151, 130, 0.5);
+    border-radius: 20px;
 }
 
 .weather-container{
@@ -32,4 +35,58 @@
 .description{
     color: #bebebe;
     padding: 2px;
+}
+
+/* The switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+}
+
+/* Hide the default checkbox input */
+.switch input {
+    display: none;
+}
+
+/* The slider (the visual part of the switch) */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* The round slider */
+.slider.round {
+    position: absolute;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    left:2px;
+    top:3px;
+    right: 0;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Styles for the slider when it's in the "on" state */
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+/* When the checkbox is checked, move the round slider to the right */
+input:checked + .slider + .slider.round {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
 }

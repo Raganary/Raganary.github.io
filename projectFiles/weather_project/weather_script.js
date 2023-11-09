@@ -27,7 +27,7 @@ if ("geolocation" in navigator) {
                     const iconUrl = data.current.weather_icons[0];
                     weatherIcon.style.backgroundImage = `url(${iconUrl})`;
                     console.log(data);
-                    temperature.textContent = `${data.current.temperature}°C`;
+                    temperature.textContent = c_to_f(data.current.temperature, temperature);
                     description.textContent = data.current.weather_descriptions[0];
                     location.textContent = `Weather in ${data.location.name}, ${data.location.region}`;
                 })
@@ -57,4 +57,20 @@ if ("geolocation" in navigator) {
   } else {
     // Geolocation is not available in this browser
     console.log("Geolocation is not supported in this browser.");
+}
+
+function c_to_f(temp, elem){
+  const toggle = document.getElementById('myToggle');
+
+  toggle.addEventListener('change', function() {
+      if (toggle.checked) {
+          // Perform an action when the toggle is in the "on" or checked state
+          return elem.textContent = `${(temp * 9/5) + 32}°F`;
+      }
+      else{
+        return  elem.textContent = `${temp}°C`;
+      }
+  });
+
+
 }
