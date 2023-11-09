@@ -1,0 +1,35 @@
+.weather-widget{
+    text-align: center;
+    border: 2px solid #bebebe;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.weather-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon {
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.weather-info-container{
+    text-align: left;
+}
+
+.temperature{
+    color: #bebebe;
+    padding: 2px;
+}
+
+.description{
+    color: #bebebe;
+    padding: 2px;
+}

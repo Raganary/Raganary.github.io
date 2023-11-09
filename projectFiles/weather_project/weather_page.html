@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="..\..\css\styles.css">
+    <link rel="stylesheet" href="..\..\css\navbar-top.css">
+    <link rel="stylesheet" href="weather_style.css">
+    <title>Ryan Hua's Portfolio</title>
+  </head>
+    <link rel="icon" href="..\..\assets\icon.png">
+    <navbar-top>
+      <div class="topnav">
+        <a class="active" href="..\..\index.html">Home</a>
+        <div class="dropdown">
+           <button class="dropbtn">Projects</button>
+           <div class="dropdown-content">
+            <a href="weather_page.html">1. Weather Report</a>
+           </div>
+        </div>
+        <a href="..\..\acousticsPage.html">Room Acoustics</a>
+        <a href="..\..\Resume.pdf">Resume</a>
+        <a href = "mailto: ryanhua02@gmail.com">Email</a>
+      </div>
+    </navbar-top>
+  <body>
+    <div class="weather-widget">
+      <h3><div class="location"></div></h3>
+      <div class="weather-info">
+        <div class="weather-container">
+          <div class="weather-icon"></div>
+          <div class="weather-info-container">
+            <div class="temperature"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+      </div>
+      <script src="weather_script.js"></script>
+    </div>
+  </body>
+</html>
